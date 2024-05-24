@@ -1,5 +1,8 @@
 # AMP with agentless metric collection for EKS
 
+## Architecture Diagram
+![Architecture](architecture.png)
+
 ## Steps
 
 1. Create EKS cluster with Send metrics to AMP.
