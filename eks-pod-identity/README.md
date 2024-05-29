@@ -10,7 +10,7 @@ In this walkthrough, we will demonstrate how to use the new Amazon EKS Pod Ident
 
 * An AWS Account
 * export AWS_REGION=ap-southeast-1 # Replace with your AWS region
-* export CLUSTER_NAME=eks-pod-identity-demo-2 # Replace with your cluster name
+* export CLUSTER_NAME=eks-pod-identity-demo-4 # Replace with your cluster name
 * export AWS_ACCOUNT=123456789012 # Your AWS Account number
 * [AWS CLI](https://aws.amazon.com/cli/) and credentails from both AWS Accounts, alternatively use [AWS CloudShell](https://docs.aws.amazon.com/cloudshell/latest/userguide/welcome.html#how-to-get-started)
 * [eksctl](https://eksctl.io/) - a simple CLI tool for creating and managing Amazon EKS clusters
@@ -37,13 +37,13 @@ aws eks describe-addon --cluster-name ${CLUSTER_NAME} --region ${AWS_REGION} --a
 {
     "addon": {
         "addonName": "eks-pod-identity-agent",
-        "clusterName": "eks-pod-identity-demo-2",
+        "clusterName": "eks-pod-identity-demo-4",
         "status": "ACTIVE",
         "addonVersion": "v1.2.0-eksbuild.1",
         "health": {
             "issues": []
         },
-        "addonArn": "arn:aws:eks:ap-southeast-1:{AWS_ACCOUNT}:addon/eks-pod-identity-demo-2/eks-pod-identity-agent/bac7d9f1-52cf-26ab-a77e-9e0820feb8e2",
+        "addonArn": "arn:aws:eks:ap-southeast-1:{AWS_ACCOUNT}:addon/eks-pod-identity-demo-4/eks-pod-identity-agent/bac7d9f1-52cf-26ab-a77e-9e0820feb8e2",
         "createdAt": "2024-05-26T14:52:06.591000+07:00",
         "modifiedAt": "2024-05-26T14:52:43.300000+07:00",
         "tags": {}
