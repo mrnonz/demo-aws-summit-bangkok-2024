@@ -11,7 +11,7 @@ In this walkthrough, we will demonstrate how to use the new Amazon EKS Pod Ident
 * An AWS Account
 * export AWS_REGION=ap-southeast-1 # Replace with your AWS region
 * export CLUSTER_NAME=eks-pod-identity-demo-4 # Replace with your cluster name
-* export AWS_ACCOUNT=123456789012 # Your AWS Account number
+* export AWS_ACCOUNT=$(aws sts get-caller-identity --query "Account" --output text)
 * [AWS CLI](https://aws.amazon.com/cli/) and credentails from both AWS Accounts, alternatively use [AWS CloudShell](https://docs.aws.amazon.com/cloudshell/latest/userguide/welcome.html#how-to-get-started)
 * [eksctl](https://eksctl.io/) - a simple CLI tool for creating and managing Amazon EKS clusters
 * [git](https://github.com/git-guides/install-git)
